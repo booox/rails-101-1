@@ -26,6 +26,7 @@ class GroupsController < ApplicationController
   # show
   def show
     @group = Group.find(params[:id])
+    @posts = @group.posts
   end
 
   # edit
